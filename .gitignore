@@ -1,31 +1,51 @@
-# Fichiers de build
-*.o
-*.d
+# Fichiers de compilation et binaires
 *.elf
-*.hex
 *.bin
+*.hex
+*.axf
+*.o
+*.obj
 *.map
+*.lst
+*.d
 
-# Dossiers temporaires d'IDE
-build/
-Debug/
-Release/
+# Dossiers de build
+/build/
+/Debug/
+/Release/
+/output/
+/.elf/
+*.launch
 
-# Fichiers système
-.DS_Store
-Thumbs.db
+# Fichiers générés par STM32CubeMX
+*.ioc
+*.mxproject
 
-# Fichiers de l'IDE (Keil, STM32CubeIDE, etc.)
-*.uvoptx
+# Fichiers générés par IDE (Keil, TrueSTUDIO, IAR, VSCode, etc)
 *.uvprojx
-*.log
-*.suo
-*.user
+*.uvoptx
+*.ewp
+*.ewd
 *.cproject
 *.project
-*.launch
-.idea/
-.vscode/
 
-# Backup
+# Fichiers temporaires et logs
+*.log
+*.tmp
+*.bak
 *~
+
+# Dossiers cachés IDE
+.vscode/
+.idea/
+
+# Fichiers générés par CMake (si utilisé)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Autres fichiers
+*.dmp
+
+# Ignore les dossiers et fichiers spécifiques à votre environnement ou config personnelle
